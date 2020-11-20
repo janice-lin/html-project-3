@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.tour-form {
+    max-width: 350px;
+    background-color: $pinkLight;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 5px $brownDark;
+    padding: 10px 20px 20px 20px;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-row input,
+.form-row textarea {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    background-color: $offWhite;
+    border-color: transparent;
+    resize: none;
+}
+
+.form-button input {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: $brownDark;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.tour-form label{
+    font-family: 'Roboto', sans-serif;
+}

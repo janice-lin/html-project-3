@@ -1,0 +1,132 @@
+footer{
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    padding: 30px;
+    background-color: $brownLight;
+}
+.footer-all{
+    margin: 0 auto;
+}
+.footer-left {
+    line-height: 30px;
+}
+.footer-nav {
+    margin: 30px 0;
+}
+#footer-nav-ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-phone {
+    padding-bottom: 10px;
+}
+hr{
+    border-top: 1px solid $brownDark;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.footer-bottom {
+    font-size: 0.8em;
+    margin-top: 30px;
+}
+.footer-form {
+    margin: 0 auto;
+    position: relative;
+    height: 40px;
+    width: 360px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.footer-form .email-sub {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    color: white;
+    background: $brownDark;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+#click:checked ~ .email-sub {
+    height: 40px;
+    width: 100px;
+    opacity: 0;
+    pointer-events: none;
+}
+.footer-form .email-sub-field {
+    position: relative;
+    height: 100%;
+    width: 0%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.footer-form #click{
+    display: none;
+}
+#click:checked ~ .email-sub-field {
+    opacity: 1;
+    width: 100%;
+    pointer-events: auto;
+}
+.footer-form .email-sub-field input {
+    height: 100%;
+    width: 100%;
+    border: 2px solid $pinkLight;
+    background-color: $pinkLight;
+    border-radius: 5px;
+    padding: 0 120px 0 15px;
+    outline: none;
+}
+.footer-form .email-sub-2 {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform:translateY(-50%);
+    height: 40px;
+    width: 100px;
+    color: white;
+    background: $brownDark;
+    border-radius: 0 5px 5px 0;
+    line-height: 40px; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .footer-form {
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .footer-all {
+        max-width: 880px;;
+    }
+    .footer-left {
+        margin: 25px 0;
+        text-align: left;
+    }
+    .footer-nav {
+        margin-bottom: 10px
+    }
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-nav {
+        display: block;
+    }
+    #footer-nav-ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-nav-a {
+        padding: 0 10px;
+    }
+}
