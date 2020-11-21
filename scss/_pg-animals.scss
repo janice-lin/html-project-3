@@ -1,0 +1,60 @@
+// sub nav bar for animals
+
+.navbar-sub{
+    background-color: $brownDark;
+}
+
+.nav-sub{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.nav-sub a{
+    text-decoration: none;
+    color: $offWhite;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.0em;
+}
+
+.nav-sub a:hover{
+    text-decoration: underline;
+}
+
+h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    color: $softBlack;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.heading-animals{
+    background-color: $pinkLight;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+// media queries
+
+@media (min-width: 1000px){
+
+    .nav-sub{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media (min-width: 670px){
+
+    .nav-sub{
+        max-width: 70%;
+    }
+}
