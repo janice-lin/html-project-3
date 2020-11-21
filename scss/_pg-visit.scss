@@ -1,0 +1,100 @@
+.section-tickets{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ticket-prices{
+    max-width: 500px;
+}
+
+#membership{
+    max-width: 500px;
+}
+
+table{
+    width: 100%;
+    font-family: 'open-sans', sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 10px;
+}
+
+p.hours{
+    color: $brownDark;
+}
+
+span.vegan{
+    color: $brownDark;
+}
+
+span.streets{
+    color: $brownDark;
+}
+
+.section-tickets{
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+        "one"
+        "two";
+}
+
+img.cows{
+    grid-area: two;
+}
+
+#description.cows-description{
+    grid-area: one;
+}
+
+.section-dining{
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+        "one"
+        "two";
+}
+
+img.llama{
+    grid-area: two;
+}
+
+#description.llama-description{
+    grid-area: one;
+}
+
+.section-directions{
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+        "one"
+        "two";
+}
+
+img.pigs{
+    grid-area: two;
+}
+
+#description.pigs-description{
+    grid-area: one;
+}
+
+@media (min-width: 670px){
+
+    .section-tickets{
+        grid-template-areas:
+            "two one";
+    }
+
+    .section-dining{
+        grid-template-areas:
+            "two one";
+    }
+
+    .section-directions{
+        grid-template-areas: 
+        "two one";
+    }
+
+
+}
