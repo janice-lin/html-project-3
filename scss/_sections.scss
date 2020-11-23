@@ -1,26 +1,26 @@
 // sections styles
 
-#one-col{
+.one-col{
     padding-right: 10vw;
     padding-left: 10vw;
     padding-bottom: 15vw;
     padding-top: 15vw;
 }
 
-#two-col{
+.two-col{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
 }
 
-#description{
+.description{
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 15vw;
     padding-bottom: 15vw;
 }
 
-#three-col{
+.three-col{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -32,14 +32,18 @@
     grid-gap: 4em;
 }
 
-#three-col img{
+section.two-col img{
+    width: 100%;
+}
+
+section.three-col img{
     display: block;
     object-fit: cover;
     width: 100%;
     height: auto;
 }
 
-#three-col h5{
+.three-col h5{
     background-color: white;
     margin: 0;
     padding: 20px;
@@ -54,7 +58,7 @@
 
 @media (min-width: 670px){
 
-    #three-col {
+    .three-col {
         grid-template-columns: repeat(3, 1fr);
         padding-right: 10vw;
         padding-left: 10vw;
@@ -65,29 +69,29 @@
 
 @media (min-width: 1000px){
 
-    #one-col{
+    .one-col{
         padding-right: 18vw;
         padding-left: 18vw;
         padding-bottom: 10vw;
         padding-top: 10vw;
     }
 
-    #two-col{
+    .two-col{
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
     }
 
-    #two-col img{
+    section.two-col img{
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
 
-    #description{
+    .description{
         padding: 12vw;
     }
 
-    #three-col {
+    .three-col {
         padding-right: 18vw;
         padding-left: 18vw;
         padding-bottom: 10vw;
