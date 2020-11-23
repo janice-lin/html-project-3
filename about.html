@@ -37,7 +37,7 @@
         <!-- Responsive Horizontal Sliding Menu -->
     
         <div class="menu">
-            <a href="index.html"><img id="favicon" src="images/mr-logo-outline.png" alt="company logo with white and black outlines"></a>
+            <a href="index.html"><img id="favicon" src="images/mr-logo-outline.png" alt=""></a>
             <span></span>
         </div>
     
@@ -46,11 +46,11 @@
         <nav class="navbar-menu">
 
             <ul class="nav-ul">
-                <li><a href="index.html"><img id="favicon-white" src="images/mr-logo-white.png" alt="company logo in white"></a></li>
+                <a href="index.html"><img id="favicon" src="images/mr-logo-white.png" alt=""></a>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="visit.html">Plan Your Visit</a></li>
                 <li><a href="animals.html">Meet the Animals</a></li>
-                <li><a href="to-do.html">Things to Do</a></li>
+                <li><a href="#0">Things to Do</a></li>
             </ul>
 
         </nav>
@@ -59,12 +59,12 @@
               "banner-text-sub" for pages that are not index -->
 
     <div class="image-banner">
-        <img src="images/horses-banner-cropped.jpg" alt="horses in a barn">
+        <img src="images/horses-banner-cropped.jpg">
         <div class="banner-text">
             <h1>Welcome to the Farm House</h1>
             <p>Creating a better world for animals</p>
             <hr>
-            <div class="more-btn-pink"><a href="about.html">Learn More</a></div>
+            <button class="more-btn"><a href="#0">Learn More</a></button>
         </div>
             
     </div>
@@ -206,70 +206,47 @@
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </main>
 
-        <footer class="footer-all">
-            <div class="footer-grid">
-                <div class="footer-contact">
-                    <div class="contact-us">
-                        <h2>Contact</h2>
-                      
-                        
-                        <a href="https://www.google.com/maps/place/BCIT+Downtown+Campus/@49.2834508,-123.1239881,15z/data=!3m1!4b1!4m5!3m4!1s0x54867178c6f02ee1:0xb4e03bf432e66714!8m2!3d49.2834511!4d-123.1152548">
-                        555 Seymour St <br> Vancouver, BC V6B 3H6</a> <!--link to Google Map (possibly BCIT address :))?-->
+        <footer>
+            <div class="footer-all">
+                <div class="footer-top">
+                    
+                    <div class="footer-left">
+                        <a href="https://www.google.com/maps/place/BCIT+Downtown+Campus/@49.2834508,-123.1239881,15z/data=!3m1!4b1!4m5!3m4!1s0x54867178c6f02ee1:0xb4e03bf432e66714!8m2!3d49.2834511!4d-123.1152548">555 Seymour St <br> Vancouver, BC V6B 3H6</a> <!--link to Google Map (possibly BCIT address :))?-->
                         <br>
-                        <p>+1-604-434-5734</p> 
+                        <span id="footer-phone">+1-604-434-5734</span> 
                     </div>
-                    <div class="footer-button">
-                        <div class="footer-form">
-                            <input type="checkbox" id="click">
-                            <label class="email-sub" for="click">Subscribe</label>
-                            <div class="email-sub-field">
-                                <input type="email" placeholder="Email Address">
-                                <label class="email-sub-2" for="click">Subscribe</label>
+                    
+                    <div class="footer-right">
+                        <nav class="footer-nav">
+                            <ul id="footer-nav-ul">
+                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Home</a></li>
+                                <li class="footer-nav-li"><a class="footer-nav-a" href=>About Us</a></li>
+                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Plan Your Visit</a></li>
+                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Meet the Animals</a></li>
+                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Things to Do</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer-button">
+                            <div class="footer-form">
+                                <input type="checkbox" id="click">
+                                <label class="email-sub" for="click">Subscribe</label>
+                                <div class="email-sub-field">
+                                    <input type="email" placeholder="Email Address">
+                                    <label class="email-sub-2" for="click">Subscribe</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <nav class="nav-links">
-                    <h2>Explore</h2>
-                    <ul id="footer-nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="visit.html">Plan Your Visit</a></li>
-                        <li><a href="animals.html">Meet the Animals</a></li>
-                        <li><a href="to-do">Things to Do</a></li>
-                    </ul>
-                </nav>
-
-                <div class="social-media">
-                    <h2>Follow</h2>
-                    <div class="social-grid">
-                        <div><img src="images/social1.jpg" alt="baby chicks in the grass"></div>
-                        <div><img src="images/social2.jpg" alt="chicken feeding chick"></div>
-                        <div><img src="images/social3.jpg" alt="cow grazing the grass"></div>
-                        <div><img src="images/social4.jpg" alt="horse grazing the grass"></div>
-                        <div><img src="images/social5.jpg" alt="alpaca with lake background"></div>
-                        <div><img src="images/social6.jpg" alt="goat with flowers and hat"></div>
-                    </div>
-                    <div class="social-icons">
-                        <img class="hidden-img" src="images/instagram.png" alt="instagram icon">
-                        <img class="hidden-img" src="images/facebook.png" alt="facebook icon">
-                        <img class="hidden-img" src="images/linkedin.png" alt="linkedin icon">
-                    </div>
-                
+                </div>    
+                <hr>
+                <div class="footer-bottom">
+                    <span>&copy; 2020 The Farm House</span>
+                    <br>
+                    <span>For Educational Purpose Only</span>
                 </div>
             </div>
-
-            <hr>
-
-                <div class="bottom-footer">
-                    <span class="copywrite">&copy; 2020 The Farm House</span>
-                    <br>
-                    <span class="educational">For Educational Purpose Only</span>
-                </div>
-        
         </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="scripts/menu.js"></script>
