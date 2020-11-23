@@ -3,14 +3,7 @@
     justify-content: space-between;
 }
 
-
-#ticket-prices{
-    max-width: 500px;
-}
-
-#membership{
-    max-width: 500px;
-}
+// tickets table
 
 table{
     width: 100%;
@@ -19,6 +12,8 @@ table{
     line-height: 2em;
     margin-bottom: 10px;
 }
+
+// highlight words
 
 p.hours{
     color: $brownDark;
@@ -31,6 +26,8 @@ span.vegan{
 span.streets{
     color: $brownDark;
 }
+
+// grid areas
 
 #section-tickets{
     display: grid;
