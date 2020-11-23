@@ -44,26 +44,27 @@
     z-index: 0;
 }
 
-.more-btn a{
+.more-btn-pink a{
     padding: 13px;
     cursor: pointer;
     display: block;
 }
 
-.more-btn{
+.more-btn-pink{
     background-color: #E7D3CA;
     border: 1px solid #E7D3CA;
     margin-top: 12px;
+    width: 200px;
 }
 
 
-// hover effetcs
+// hover effects
 
-.more-btn a:hover, .more-btn a:active {
+.more-btn-pink a:hover, .more-btn a:active {
 color: white;
 }
 
-.more-btn:hover, .more-btn:active{
+.more-btn-pink:hover, .more-btn:active{
     background-color: transparent;
     border: 1px solid white;
 }

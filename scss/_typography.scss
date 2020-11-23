@@ -52,6 +52,7 @@ h2{
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 1.9em;
+    margin-top: 0;
 }
 
 h3{
@@ -72,7 +73,7 @@ h5{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.4em;
-    color:#272727;
+    color:$softBlack;
 }
 
 
@@ -83,14 +84,31 @@ h5{
     font-weight: 700;
     font-size: 0.9em;
     text-decoration: none;
-    color: #272727;
+    color: $softBlack;
     text-align: center;
     font-size: 20px;
 }
 
-main .more-btn a{ // used for in the body section content
+.more-btn-pink a{ // used on top of banner image
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: $softBlack;
+    text-align: center;
+    font-size: 20px;
+}
+
+main .more-btn-thin a{ // used for in the body section content
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1em;
+    text-decoration: none;
+    color: $softBlack;
+    text-align: center;
+}
+
+main .more-btn-thin{
+    margin-top: 30px;
 }
 
 // footer
@@ -106,7 +124,7 @@ main .more-btn a{ // used for in the body section content
     margin-bottom: 10px;
 }
 footer a{
-    color: black;
+    color: $darkBlack;
 }
 footer a:hover{
     color: $pinkLight;
