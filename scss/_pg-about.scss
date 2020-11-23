@@ -1,0 +1,59 @@
+#about-story {
+    background-color: $brownLight;
+}
+#about-story img {
+    grid-area: two;
+}
+#about-story .description {
+    grid-area: one;
+}
+#about-story {
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+        "one"
+        "two";
+}
+#about-mission {
+    background-color: $brownDark;
+    color: white;
+    text-align: center;
+}
+#about-comm {
+    background-color: $pinkLight;
+}
+
+.flip-card {  
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    .flip-card:hover & {
+        transform: rotateY(180deg);
+    }
+}
+.flip-card-front, .flip-card-back { 
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: $brownLight;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+@media (min-width: 1000px){
+    #about-story {
+        grid-template-areas:
+            "one two";
+    }
+    
+}
+
