@@ -25,36 +25,114 @@
     text-decoration: underline;
 }
 
-h6{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1.6em;
-    color: $softBlack;
-    letter-spacing: 1px;
-    margin: 0;
+
+.section-pigs, .section-goats, .section-cows{
+    background-color: $pinkLight;
 }
 
-.heading-animals{
-    background-color: $pinkLight;
-    text-align: center;
-    padding: 30px;
+.view {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .view .mask,
+.view .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
+
+.view img {
+  display: block;
+  position: relative
+}
+
+.view p {
+    position: relative;
+    color: $offWhite;
+    font-size: 1.2em;
+    padding: 15px 30px 0px;
+    text-align: center;
+  }
+
+  .view-first img {
+    /*1*/
+    transition: all 0.3s linear;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .view-first .mask {
+    opacity: 0;
+    background-color: $brownLight;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  
+  .view-first p {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+
+  .mask h5{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  /* hover effects */
+  
+  
+  .view-first:hover .mask {
+    opacity: 1;
+  }
+  
+  .view-first:hover h2,
+  .view-first:hover p{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .view-first:hover p {
+    transition-delay: 0.1s;
+  }
 
 
 
 // media queries
 
-@media (min-width: 1000px){
+@media (min-width: 670px){ 
+
+    .nav-sub{
+        max-width: 70%;
+    }
+
+    .view p {
+        font-size: 0.8em;
+        padding: 15px 12px 0px;
+        line-height: 1.7em;
+      }
+}
+
+@media (min-width: 1400px){
 
     .nav-sub{
         padding-left: 150px;
         padding-right: 150px;
     }
+
+    .view p {
+        font-size: 1.1em;
+        line-height: 2em;
+        padding: 24px 24px 0px;
+      }
+
 }
 
-@media (min-width: 670px){
 
-    .nav-sub{
-        max-width: 70%;
-    }
-}
+

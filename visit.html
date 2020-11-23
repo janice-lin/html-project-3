@@ -48,7 +48,7 @@
             <ul class="nav-ul">
                 <a href="index.html"><img id="favicon" src="images/mr-logo-white.png" alt=""></a>
                 <li><a href="#0">About Us</a></li>
-                <li><a href="#0">Plan Your Visit</a></li>
+                <li><a href="visit.html">Plan Your Visit</a></li>
                 <li><a href="animals.html">Meet the Animals</a></li>
                 <li><a href="#0">Things to Do</a></li>
             </ul>
@@ -105,7 +105,7 @@
                         </tbody>
                     </table>
 
-                    <button class="more-btn"><a href="#0">Buy Tickets</a></button>
+                    <div class="more-btn-thin"><a href="#0">Buy Tickets</a></div>
 
                 </div>
             </section>
@@ -129,7 +129,7 @@
                     <h2>Farm Dining</h2>
                     <p>As a safe haven for animals, the Farm House is proud to serve <span class="vegan">100% vegan</span> options!</p>
                     <p>Here' a list of food and beverage spots on the farm. </p>
-                    <button class="more-btn"><a href="#0">Dining Options</a></button>
+                    <div class="more-btn-thin"><a href="#0">Dining Options</a></div>
                 </div>
             </section>
 
@@ -139,7 +139,7 @@
                     <h2>Guest Services</h2>
                     <p>Guest Services is located at the Farm's main entrance. Open daily until closing.</p>
                     <p>For information on the services we provide our guests at the farm, check out the link below.</p>
-                        <button class="more-btn"><a href="#0">Guest Services</a></button>
+                        <div class="more-btn-thin"><a href="#0">Guest Services</a></div>
                 </div>
                 <img class="goat" src="images/baby-goat.jpg">
             </section>
@@ -151,68 +151,78 @@
                     <h2>Directions</h2>
                     <p>The Farm House main entrance is located at the cross of <span class="streets">Seymour Street & Dunsmuir Street.</span></p>
                     <p >555 Seymour Street, Vancouver, BC, V6B 3H6</p>
-                        <button class="more-btn"><a href="#0">Google Maps</a></button>
+                        <div class="more-btn-thin"><a href="#0">Google Maps</a></div>
                 </div>
             </section>
             
 
-            <section class="slick-carousel">
-                <div class="carousel">
-                    <div><img src="images/gallery1.jpg"></div>
-                    <div><img src="images/gallery2.jpg"></div>
-                    <div><img src="images/gallery3.jpg"></div>
-                    <div><img src="images/gallery4.jpg"></div>
-                    <div><img src="images/gallery5.jpg"></div>
-                    <div><img src="images/gallery6.jpg"></div>
-                    <div><img src="images/gallery7.jpg"></div>
-                    <div><img src="images/gallery8.jpg"></div>
-                  </div>
-            </section>
-
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </main>
 
-        <footer>
-            <div class="footer-all">
-                <div class="footer-top">
-                    
-                    <div class="footer-left">
-                        <a href="https://www.google.com/maps/place/BCIT+Downtown+Campus/@49.2834508,-123.1239881,15z/data=!3m1!4b1!4m5!3m4!1s0x54867178c6f02ee1:0xb4e03bf432e66714!8m2!3d49.2834511!4d-123.1152548">555 Seymour St <br> Vancouver, BC V6B 3H6</a> <!--link to Google Map (possibly BCIT address :))?-->
+        <footer class="footer-all">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <div class="contact-us">
+                        <h2>Contact</h2>
+                      
+                        
+                        <a href="https://www.google.com/maps/place/BCIT+Downtown+Campus/@49.2834508,-123.1239881,15z/data=!3m1!4b1!4m5!3m4!1s0x54867178c6f02ee1:0xb4e03bf432e66714!8m2!3d49.2834511!4d-123.1152548">
+                        555 Seymour St <br> Vancouver, BC V6B 3H6</a> <!--link to Google Map (possibly BCIT address :))?-->
                         <br>
-                        <span id="footer-phone">+1-604-434-5734</span> 
+                        <p>+1-604-434-5734</p> 
                     </div>
-                    
-                    <div class="footer-right">
-                        <nav class="footer-nav">
-                            <ul id="footer-nav-ul">
-                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Home</a></li>
-                                <li class="footer-nav-li"><a class="footer-nav-a" href=>About Us</a></li>
-                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Plan Your Visit</a></li>
-                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Meet the Animals</a></li>
-                                <li class="footer-nav-li"><a class="footer-nav-a" href=>Things to Do</a></li>
-                            </ul>
-                        </nav>
-                        <div class="footer-button">
-                            <div class="footer-form">
-                                <input type="checkbox" id="click">
-                                <label class="email-sub" for="click">Subscribe</label>
-                                <div class="email-sub-field">
-                                    <input type="email" placeholder="Email Address">
-                                    <label class="email-sub-2" for="click">Subscribe</label>
-                                </div>
+                    <div class="footer-button">
+                        <div class="footer-form">
+                            <input type="checkbox" id="click">
+                            <label class="email-sub" for="click">Subscribe</label>
+                            <div class="email-sub-field">
+                                <input type="email" placeholder="Email Address">
+                                <label class="email-sub-2" for="click">Subscribe</label>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                </div>    
-                <hr>
-                <div class="footer-bottom">
-                    <span>&copy; 2020 The Farm House</span>
-                    <br>
-                    <span>For Educational Purpose Only</span>
+                <nav class="nav-links">
+                    <h2>Explore</h2>
+                    <ul id="footer-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href=>About Us</a></li>
+                        <li><a href="visit.html">Plan Your Visit</a></li>
+                        <li><a href="animals.html">Meet the Animals</a></li>
+                        <li><a href=>Things to Do</a></li>
+                    </ul>
+                </nav>
+
+                <div class="social-media">
+                    <h2>Follow</h2>
+                    <div class="social-grid">
+                        <div><img src="images/social1.jpg" alt="baby chicks in the grass"></div>
+                        <div><img src="images/social2.jpg" alt="chicken feeding chick"></div>
+                        <div><img src="images/social3.jpg" alt="cow grazing the grass"></div>
+                        <div><img src="images/social4.jpg" alt="horse grazing the grass"></div>
+                        <div><img src="images/social5.jpg" alt="alpaca with lake background"></div>
+                        <div><img src="images/social6.jpg" alt="goat with flowers and hat"></div>
+                    </div>
+                    <div class="social-icons">
+                        <img class="hidden-img" src="images/instagram.png" alt="instagram icon">
+                        <img class="hidden-img" src="images/facebook.png" alt="facebook icon">
+                        <img class="hidden-img" src="images/linkedin.png" alt="linkedin icon">
+                    </div>
+                
                 </div>
             </div>
+
+            <hr>
+
+                <div class="bottom-footer">
+                    <span class="copywrite">&copy; 2020 The Farm House</span>
+                    <br>
+                    <span class="educational">For Educational Purpose Only</span>
+                </div>
+        
         </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="scripts/menu.js"></script>
