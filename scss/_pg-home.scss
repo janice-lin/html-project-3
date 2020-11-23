@@ -59,7 +59,7 @@
 }
 
 .animal-btn a{
-    padding: 13px 15vw;
+    padding: 13px;
     cursor: pointer;
     display: block;
     text-decoration: none;
@@ -71,6 +71,8 @@
     background-color: transparent;
     border: 1px solid $softBlack;
     margin-top: 12px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .animal-btn a:hover, .animal-btn a:active {
@@ -79,7 +81,7 @@
     
 .animal-btn:hover, .animal-btn:active{
     background-color: $pinkLight;
-    border: 2px solid $pinkLight;
+    border: 1px solid $pinkLight;
 }
 .section-one-home{
     margin: 15vw 10vw;
@@ -184,6 +186,9 @@
 .book-tour-btn{
     background-color: #E7D3CA;
     border: solid 1px #E7D3CA;
+    font-weight: 300;
+    width: 100px;
+    text-align: center;
 }
 .book-tour-btn a:hover, .book-tour-btn a:active {
     color: white;
@@ -192,6 +197,21 @@
 .book-tour-btn:hover, .book-tour-btn:active{
     background-color: transparent;
     border: 1px solid white;
+}
+.home-gallery{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+    margin: 2px 0px;
+}
+.hg-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hg{
+    height: 100%;
 }
 //media queries 
 
@@ -261,6 +281,56 @@
         grid-row-start: 2;
         grid-row-end: 4;
       }
+    .home-gallery{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 2px;
+      
+    }
+    .hg1{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+
+    }
+    .hg2{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        height: 100%;
+    }
+    .hg3{
+        grid-column: 4 / 6;
+        grid-row: 1 / 2;
+        height: 100%;
+    }
+    .hg4{
+        grid-column: 6 / 7;
+        grid-row: 1 / 2;
+    }
+    .hg5{
+        grid-column: 7 / 8;
+        grid-row: 1 / 2;
+    }
+    .hg6{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        height: 100%;
+    }
+    .hg7{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .hg8{
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+    .hg9{
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+    }
+    .hg10{
+        grid-column: 6 / 8;
+        grid-row: 2 / 3;
+    }
 }
 
 @media (min-width: 1000px){
@@ -287,6 +357,10 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 4rem;
     }
+    .animal-btn{
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
     #two-col-home{
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
@@ -297,12 +371,15 @@
     }
     .description-home2{
         grid-area: two;
+        height: 100%;
     }
     #two-col-home img{
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
+    .book-tour-btn{
+        width: 120px;
+    }
 }
-
 
