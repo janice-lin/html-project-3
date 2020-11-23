@@ -1,5 +1,5 @@
 .section-two-home{
-    background-color:$brownDark;
+    background-color:$brownLight;
     color: $offWhite;
 }
 #description-home3{
@@ -19,6 +19,11 @@
     color: $softBlack;
     padding: 15px 5px;
     font-size: 1.7rem;
+}
+.three-col-title2{
+    text-align: center;
+    color: $brownDark;
+    font-size: 1.5rem;
 }
 #three-col-home{
     display: grid;
@@ -44,7 +49,9 @@
     margin: 0;
     padding: 20px;
 }
-
+.home-bookmarks{
+    text-decoration: none;
+}
 .home-btn{
     text-align: center;
     font-size: 1.3rem;
@@ -62,7 +69,7 @@
 
 .animal-btn{
     background-color: transparent;
-    border: 2px solid $softBlack;
+    border: 1px solid $softBlack;
     margin-top: 12px;
 }
 
@@ -76,7 +83,6 @@
 }
 .section-one-home{
     margin: 15vw 10vw;
-    border: solid 2px $brownDark;
 }
 .mission-text{
     text-align: center;
@@ -105,11 +111,11 @@
    object-fit: cover;
 }
 .ttd1{
-    background-color: $brownDark;
+    background-color: $brownLight;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding:60px 30px 30px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -157,14 +163,14 @@
     padding: 0;
 }   
 .description-home1{
-    background-color: $brownDark;
+    background-color: $brownLight;
     padding: 5vw;
     margin: 8vw;
     border: solid 2px $offWhite;
     color: $offWhite;
 }
 .section-two-home2{
-    background-color: $brownDark;
+    background-color: $brownLight;
 }
 .book-tour-btn a{
     padding: .5vw 1vw;
@@ -213,7 +219,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 40px 20px 20px;
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
@@ -272,7 +278,6 @@
     }
     .section-one-home{
         margin: 10vw 18vw;
-        border: solid 2px $brownDark;
     }
     #three-col-home {
         padding-right: 18vw;
