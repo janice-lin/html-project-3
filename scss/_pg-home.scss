@@ -1,0 +1,303 @@
+.section-two-home{
+    background-color:$brownDark;
+    color: $offWhite;
+}
+#description-home3{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+}
+#two-col-home1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+}
+.three-col-title{
+    margin-top: 10vw;
+    text-align: center;
+    color: $softBlack;
+    padding: 15px 5px;
+    font-size: 1.7rem;
+}
+#three-col-home{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    text-align: center;
+    grid-gap: 4em;
+}
+
+#three-col-home img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+#three-col-home h5{
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.home-btn{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10vw;
+}
+
+.animal-btn a{
+    padding: 13px 15vw;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: $softBlack; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.animal-btn{
+    background-color: transparent;
+    border: 2px solid $softBlack;
+    margin-top: 12px;
+}
+
+.animal-btn a:hover, .animal-btn a:active {
+    color: $softBlack;
+}
+    
+.animal-btn:hover, .animal-btn:active{
+    background-color: $pinkLight;
+    border: 2px solid $pinkLight;
+}
+.section-one-home{
+    margin: 15vw 10vw;
+    border: solid 2px $brownDark;
+}
+.mission-text{
+    text-align: center;
+    color: $softBlack;
+    margin-bottom: 50px;
+}
+#one-col-home{
+    padding: 5vw 2vw;
+}
+.ttd1 a{
+    text-decoration: none;
+    color: $offWhite;
+}
+.ttd1 a:hover {
+    color: $softBlack;
+}
+.ttd-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 100px;
+}
+.ttd-image{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.ttd1{
+    background-color: $brownDark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+.ttd2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+.ttd3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+.ttd4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+.ttd5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+.ttd6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+.ttd7{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  } 
+#two-col-home{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+}   
+.description-home1{
+    background-color: $brownDark;
+    padding: 5vw;
+    margin: 8vw;
+    border: solid 2px $offWhite;
+    color: $offWhite;
+}
+.section-two-home2{
+    background-color: $brownDark;
+}
+.book-tour-btn a{
+    padding: .5vw 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: .9em;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: #272727; 
+}
+.book-tour-btn{
+    background-color: #E7D3CA;
+    border: solid 1px #E7D3CA;
+}
+.book-tour-btn a:hover, .book-tour-btn a:active {
+    color: white;
+    }
+    
+.book-tour-btn:hover, .book-tour-btn:active{
+    background-color: transparent;
+    border: 1px solid white;
+}
+//media queries 
+
+@media (min-width: 670px){
+
+    #three-col-home {
+        grid-template-columns: repeat(3, 1fr);
+        padding-right: 10vw;
+        padding-left: 10vw;
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+    }
+    .three-col-title{
+        font-size: 2rem;
+    }
+    .ttd-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .ttd1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+    .ttd2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    .ttd3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    .ttd4{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    .ttd5{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    .ttd6{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    .ttd7{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+}
+
+@media (min-width: 1000px){
+    #two-col-home1{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+    #two-col-home1 img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    #description-home3{
+        padding: 12vw;
+    }
+    .section-one-home{
+        margin: 10vw 18vw;
+        border: solid 2px $brownDark;
+    }
+    #three-col-home {
+        padding-right: 18vw;
+        padding-left: 18vw;
+        padding-bottom: 3vw;
+        padding-top: 2vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4rem;
+    }
+    #two-col-home{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        grid-template-areas: "one two";
+    }
+    .description-home1{
+        grid-area: one;
+    }
+    .description-home2{
+        grid-area: two;
+    }
+    #two-col-home img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
