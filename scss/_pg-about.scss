@@ -4,12 +4,28 @@
 #about-mission {
     background-color: $brownDark;
     color: white;
+}
+#about-story .description, 
+#about-mission, 
+#about-values .description{
     text-align: center;
 }
 #about-comm {
     background-color: $pinkLight;
 }
-
+#about-comm-intro {
+    padding-bottom: 0;
+    text-align: center;
+}
+#about-comm .three-col {
+    padding-top: 5vw;
+}
+#about-comm .three-col img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
 .flip-card {  
     perspective: 1000px;
 }
@@ -34,6 +50,14 @@
     background-color: $brownLight;
     color: black;
     transform: rotateY(180deg);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+@media (min-width: 1000px){
 
+    #about-story .description, 
+    #about-values .description{
+        text-align: left;
+    }
+}

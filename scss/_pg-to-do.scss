@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+.to-do-intro {
+    text-align: center;
+    padding-bottom: 5vw;
+}
+.booking-form {
+    padding-bottom: 10vw;
+}
+#volunteer {
+    background-color: $brownDark;
+    color: white;
+    text-align: center;
+}
+#tour-form, #farm-tour {
+    background-color: $brownLight;
+}
+
+@media (min-width: 800px){
+    
+    .form-content {
+        max-width: 700px;
+        padding: 30px;
+    }
+    .tour-left input {
+        margin-bottom: 17px;
+    }
+    .dine-left input {
+        margin-bottom: 16.2px;
+    }
+    .flex-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    .form-button {
+        margin-top: 20px
+    }
+}
