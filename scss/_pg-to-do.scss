@@ -28,7 +28,9 @@ html {
 #dining-form {
     background-color: $brownLight;
 }
-
+#to-do-dine-button {
+    margin: 0 auto;
+}
 @media (min-width: 800px){
     
     .form-content {
