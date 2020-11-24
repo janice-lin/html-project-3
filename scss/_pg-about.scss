@@ -48,16 +48,40 @@
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     background-color: $brownLight;
-    color: black;
     transform: rotateY(180deg);
-    padding-left: 10px;
-    padding-right: 10px;
+}
+.flip-card-back p {
+    position: absolute;
+    font-size: 25px;
+    line-height: 1.5;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
+@media (min-width: 670px){
+
+    .flip-card-back p {
+        font-size: 15px;
+        padding-left: 8px;
+        padding-right: 8px;                            
+    }
+    
+}
 @media (min-width: 1000px){
 
     #about-story .description, 
     #about-values .description{
         text-align: left;
+    }
+    .flip-card-back p {
+        font-size: 17px;
+        line-height: 1.8;
+        padding-left: 10px;
+        padding-right: 10px;
+                                 
     }
 }
