@@ -140,6 +140,10 @@ footer a:hover{
     .banner-text-sub{
         font-size: 1.5em;
     }
+
+    h5{
+        font-size: 1.1em;
+    }
 }
 
 @media (min-width: 1000px){
@@ -158,5 +162,9 @@ footer a:hover{
         font-weight: 900;
         text-transform: uppercase;
         font-size: 13px;
+    }
+
+    h5{
+        font-size: 1.3em;
     }
 }

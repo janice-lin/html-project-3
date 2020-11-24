@@ -18,7 +18,7 @@
     color: $offWhite;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1.0em;
+    font-size: 0.8em;
 }
 
 .nav-sub a:hover{
@@ -55,9 +55,10 @@
 .view p {
     position: relative;
     color: $offWhite;
-    font-size: 1.2em;
-    padding: 15px 30px 0px;
-    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.7em;
+    padding: 10px 30px 0px;
+    text-align: left;
   }
 
   .view-first img {
@@ -111,29 +112,42 @@
 @media (min-width: 670px){ 
 
     .nav-sub{
-        max-width: 70%;
+        max-width: 80%;
     }
 
     .view p {
-        font-size: 0.8em;
-        padding: 15px 12px 0px;
-        line-height: 1.7em;
+        font-size: 0.7em;
+        line-height: 1.6em;
+        padding: 5px 18px 0px;
       }
 }
 
-@media (min-width: 1400px){
+
+@media (min-width: 1000px){
 
     .nav-sub{
-        padding-left: 150px;
-        padding-right: 150px;
+      padding-left: 150px;
+      padding-right: 150px;
     }
 
     .view p {
-        font-size: 1.1em;
-        line-height: 2em;
-        padding: 24px 24px 0px;
-      }
-
+      font-size: 0.8em;
+      line-height: 1.7em;
+      padding: 5px 25px 0px;
+    }
 }
 
+  @media (min-width: 1400px){
 
+    .view p{
+      font-size: 1.0em;
+      line-height: 1.8em;
+      padding: 10px 30px 0px;
+    }
+
+
+    .nav-sub a{
+      font-size: 1.0em;
+    }
+
+}
