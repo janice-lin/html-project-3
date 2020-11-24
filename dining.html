@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-<title>Title of the Page</title>
+<title>Dining Options</title>
 <link rel="stylesheet" href="styles/styles.css">
 <link rel="stylesheet" href="styles/slick-theme.css">
 <link rel="stylesheet" href="styles/slick.css">
@@ -44,9 +44,7 @@
         <!-- Navigationbar -->
     
         <nav class="navbar-menu">
-
             <a href="index.html"><img id="favicon-white" src="images/mr-logo-white.png" alt="company logo in white"></a>
-
             <ul class="nav-ul">
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="visit.html">Plan Your Visit</a></li>
@@ -59,13 +57,10 @@
          <!-- "image-banner-sub" for pages that are not index &
               "banner-text-sub" for pages that are not index -->
 
-    <div class="image-banner">
-        <img src="images/horses-banner-cropped.jpg" alt="horses in a barn">
-        <div class="banner-text">
-            <h1>Welcome to the Farm House</h1>
-            <p>Creating a better world for animals</p>
-            <hr>
-            <div class="more-btn-pink"><a href="about.html">Learn More</a></div>
+    <div class="image-banner-sub">
+        <img src="images/alpaca-banner.jpg" alt="pig banner">
+        <div class="banner-text-sub">
+            <h1>Dining Options</h1>
         </div>
             
     </div>
@@ -76,144 +71,58 @@
             
             <!-- change section class to something specific for background colors but leave id as per column #s-->
 
-            
-            <section class="section-one" id="one-col">
-                <h2>Heading #2</h2>
-                <p>Paragraph Content</p>
-            </section>
+            <section id="dining-intro" class="two-col">
 
-            <section class="section-two" id="two-col">
-                    <img src="images/horses-banner-cropped.jpg" alt="">
+                <div class="description">
+                    <h2>Farm Dining</h2>
+                    <p>The Farm House prides itself on serving a wide selection of wraps, sandwiches, salads, pizzas and many other kid-friendly foods. 
+                        If food isn't what you're after, we have several wines available from our very own grapes!</p>
+                </div>
+
+                <img src="images/owl.jpg" alt="barn owl in the grass">
                 
-                <div id="description">
-                    <p>Paragraph Content</p>
-                </div>  
+
             </section>
 
-            <section class="section-three" id="three-col">
-                
-                    <div id="col-01">
-                        <img src="images/alpaca6.jpg" alt="alpaca">
-                        <h5>Paragraph</h5>
-                    </div>
+            <section id="dining-options" class="three-col">
+                <div id="col-01-cafe">
+                    <img src="images/cafe.jpg" alt="brown horse with black and white mane">
+                    <h5>Cow Cafe</h5>
+                </div>
+    
+                <div id="col-01-">
+                    <img src="images/restaurant.jpg" alt="brown horse with black and white mane">
+                    <h5>Barn Bistro</h5>
+                </div>
 
-                    <div id="col-02">
-                        <img src="images/alpaca6.jpg" alt="alpaca">
-                        <h5>Paragraph</h5>
-                    </div>
+                <div id="col-01-pcinic">
+                    <img src="images/picnic.jpg" alt="brown horse with black and white mane">
+                    <h5>Picnic Areas</h5>
+                </div>
 
-                    <div id="col-03">
-                        <img src="images/alpaca6.jpg" alt="alpaca">
-                        <h5>Paragraph</h5>
-                    </div>
-                
             </section>
 
-            <div class="tour-booking-form">
-                <section class="tour-form">
-                    <div class="form-header">
-                        <h2>Book Your Tour</h2>
-                    </div>
-                    <div class="form-row name">
-                        <label class="sub" for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </div><!-- end form-row -->
-                    <div class="form-row email">
-                        <label class="sub" for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div><!-- end form-row -->
-                    <div class="form-row phone">
-                        <label class="sub" for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    </div><!-- end form-row -->
-                    <div class="form-group number-group">
-                        <label class="sub" for="number">Number of People in Your Group:</label>
-                        <div class="number-choices">
-                            <label class="form-row number one-to-three">1-3
-                                <input type="radio" id="one-to-three" name="number">
-                                <span class="checkmark"></span>
-                            </label> 
-                            
-                            <label class="form-row number four-to-seven">4-7
-                                <input type="radio" id="four-to-seven" name="number">
-                                <span class="checkmark"></span>
-                            </label> 
-                        
-                            <label class="form-row number eight-to-ten">8-10
-                                <input type="radio" id="eight-to-ten" name="number">
-                                <span class="checkmark"></span>
-                            </label> 
-                            
-                        </div>
-                    </div>
-                    <div class="form-row date">
-                        <label for="birthday">Pick a Date:</label>
-                        <input type="date" id="date" name="date">
-                    </div><!-- end form-row -->
-                    <div class="form-group time-group">
-                        <label class="sub" for="time">Pick a Time:</label>
-                        <select name="time" id="time">
-                            <option value="nine-am">9:00AM</option>
-                            <option value="ten-am">10:00AM</option>
-                            <option value="eleven-am">11:00AM</option>
-                            <option value="one-pm">1:00PM</option>
-                            <option value="two-pm">2:00PM</option>
-                            <option value="three-pm">3:00PM</option>
-                            <option value="four-pm">4:00PM</option>
-                        </select>
-                    </div>
-                    <div class="form-group activities-group">
-                        <label class="sub" for="activities">Additional Activities:</label>
-                        <div class="activities-choices">
-                            <label class="form-row activities meet-animals">meet and feed the animals
-                                <input type="checkbox" id="meet-animals" name="activities">
-                                <span class="checkmark"></span>
-                            </label> 
-                            
-                            <label class="form-row activities wagon-ride">wagon ride
-                                <input type="checkbox" id="wagon-ride" name="activities">
-                                <span class="checkmark"></span>
-                            </label>
-                            
-                            <label class="form-row activities horseback-riding">horseback riding
-                                <input type="checkbox" id="horseback-riding" name="activities">
-                                <span class="checkmark"></span>
-                            </label>  
-                        </div>
-                    </div>
-                    <div class="form-row comment">
-                        <label class="sub" for="comment">Comment:</label>
-                        <textarea rows="4" name="comment" form="usrform"></textarea>
-                    </div><!-- end form-row -->
-                    <div class="form-button submit">
-                        <input class="sign-up-button" type="submit" value="Submit">
-                    </div>
-                </section>
-            </div>
+            <section id="vegan" class="two-col">
 
-            <section class="slick-carousel">
-                <div class="carousel">
-                    <div><img src="images/gallery1.jpg"></div>
-                    <div><img src="images/gallery2.jpg"></div>
-                    <div><img src="images/gallery3.jpg"></div>
-                    <div><img src="images/gallery4.jpg"></div>
-                    <div><img src="images/gallery5.jpg"></div>
-                    <div><img src="images/gallery6.jpg"></div>
-                    <div><img src="images/gallery7.jpg"></div>
-                    <div><img src="images/gallery8.jpg"></div>
-                  </div>
+                <img src="images/rabbit.jpg" alt="rabbit in the grass"> 
+
+                <div class="description">
+                    <h2>Plant Based</h2>
+                    <p>The two things that drive us daily are animal rescue and vegan food, so we are combining both! 
+                        Join us for some of the best vegan comfort food you will taste anywhere.  </p>
+                </div> 
+                              
             </section>
 
+           
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        </main>
+        </main>                         
 
         <footer class="footer-all">
             <div class="footer-grid">
                 <div class="footer-contact">
                     <div class="contact-us">
                         <h2>Contact</h2>
-                      
-                        
                         <a href="https://www.google.com/maps/place/BCIT+Downtown+Campus/@49.2834508,-123.1239881,15z/data=!3m1!4b1!4m5!3m4!1s0x54867178c6f02ee1:0xb4e03bf432e66714!8m2!3d49.2834511!4d-123.1152548" target="_blank">
                         555 Seymour St <br> Vancouver, BC V6B 3H6</a> <!--link to Google Map (possibly BCIT address :))?-->
                         <br>
@@ -238,7 +147,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="visit.html">Plan Your Visit</a></li>
                         <li><a href="animals.html">Meet the Animals</a></li>
-                        <li><a href="to-do">Things to Do</a></li>
+                        <li><a href="to-do.html">Things to Do</a></li>
                     </ul>
                 </nav>
 
@@ -270,7 +179,6 @@
                 </div>
         
         </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="scripts/menu.js"></script>
