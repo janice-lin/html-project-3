@@ -58,7 +58,7 @@
               "banner-text-sub" for pages that are not index -->
 
     <div class="image-banner-sub">
-        <img src="images/horse-banner.jpg">
+        <img src="images/horse-banner.jpg" alt="horse banner">
         <div class="banner-text-sub">
             <h1>Things to Do</h1>
         </div>
@@ -98,7 +98,7 @@
                             </div><!-- end form-row -->
 
                             <div class="form-row date">
-                                <label for="birthday">Pick a Date:</label>
+                                <label for="date" id="pick-date">Pick a Date:</label>
                                 <input type="date" id="date" name="date">
                             </div><!-- end form-row -->
 
@@ -120,7 +120,7 @@
                         <div class="form-right">
                             
                             <div class="form-group number-group">
-                                <label class="sub" for="number">Number of People in Your Group:</label>
+                                <label class="sub" id="people">Number of People in Your Group:</label>
                                     <div class="number-choices">
                                         <label class="form-row number one-to-three">1-3
                                             <input type="radio" id="one-to-three" name="number">
@@ -140,7 +140,7 @@
                             </div><!-- end form-group -->              
                         
                             <div class="form-group activities-group">
-                                <label class="sub" for="activities">Additional Activities:</label>
+                                <label class="sub" id="activities">Additional Activities:</label>
                                 <div class="activities-choices">
                                     <label class="form-row activities meet-animals">meet and feed the animals
                                         <input type="checkbox" id="meet-animals" name="activities">
@@ -160,8 +160,8 @@
                             </div>
 
                             <div class="form-row comment">
-                                <label class="sub" for="comment">Comment:</label>
-                                <textarea rows="6" name="comment" form="usrform"></textarea>
+                                <label class="sub" id="comment">Comment:</label>
+                                <textarea rows="6" name="comment"></textarea>
                             </div><!-- end form-row -->
                             
                         </div>
@@ -172,12 +172,20 @@
                 </section>
             </div>
 
-            <section class="to-do-intro one-col">
+            <section id="to-do-horseback" class="two-col">
+                <div class="description">
+                    <h2>Horseback Riding</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>  
+                <img src="images/horseback-riding.jpg" alt="horsebackriding">
+            </section>
+
+            <section id="farm-dining" class="to-do-intro one-col">
                 <h2>Farm Dining</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
 
-            <div class="booking-form">
+            <div id="dining-form" class="booking-form">
                 <section class="form-content">
                     <div class="form-header">
                         <h2>Dine with the Animals</h2>
@@ -188,27 +196,27 @@
 
                         <div class="form-row name">
                             <label class="sub" for="name">Name:</label>
-                            <input type="text" id="name" name="name">
+                            <input type="text" id="dine-name" name="name">
                         </div><!-- end form-row -->
 
                         <div class="form-row email">
                             <label class="sub" for="email">Email:</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="dine-email" name="email">
                         </div><!-- end form-row -->
 
                         <div class="form-row phone">
                             <label class="sub" for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <input type="tel" id="dine-phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </div><!-- end form-row -->
 
                         <div class="form-row date">
-                            <label for="birthday">Pick a Date:</label>
-                            <input type="date" id="date" name="date">
+                            <label for="date" id="dine-pick-date">Pick a Date:</label>
+                            <input type="date" id="dine-date" name="date">
                         </div><!-- end form-row -->
 
                         <div class="form-group time-group">
                             <label class="sub" for="time">Pick a Time:</label>
-                            <select name="time" id="time">
+                            <select name="time" id="dine-time">
                                 <option value="eleven-am">11:00AM</option>
                                 <option value="one-pm">12:00PM</option>
                                 <option value="two-pm">2:00PM</option>
@@ -222,30 +230,29 @@
                     <div class="form-right">
 
                         <div class="form-group number-group">
-                            <label class="sub" for="number">Number of People in Your Group:</label>
+                            <label class="sub" id="dine-people">Number of People in Your Group:</label>
                             <div class="number-choices">
                                 <label class="form-row number one-to-three">1-3
-                                    <input type="radio" id="one-to-three" name="number">
+                                    <input type="radio" id="dine-one-to-three" name="number">
                                     <span class="checkmark"></span>
                                 </label> 
                                 
                                 <label class="form-row number four-to-seven">4-7
-                                    <input type="radio" id="four-to-seven" name="number">
+                                    <input type="radio" id="dine-four-to-seven" name="number">
                                     <span class="checkmark"></span>
                                 </label> 
                             
                                 <label class="form-row number eight-to-ten">8-10
-                                    <input type="radio" id="eight-to-ten" name="number">
+                                    <input type="radio" id="dine-eight-to-ten" name="number">
                                     <span class="checkmark"></span>
                                 </label>   
                             </div>
                         </div><!-- end form-group -->
                         
                         <div class="form-row comment">
-                            <label class="sub" for="comment">Comment:</label>
-                            <textarea rows="12" name="comment" form="usrform"></textarea>
+                            <label class="sub" id="dine-comment">Comment:</label>
+                            <textarea rows="12" id="dine-comment-box" name="comment"></textarea>
                         </div><!-- end form-row -->
-                        
                     </div>
                 </div>
                     <div class="form-button submit">
@@ -254,12 +261,20 @@
                 </section>
             </div>
 
+            <section id="to-do-event" class="two-col">
+                <div class="description">
+                    <h2>Large Events</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div> 
+                <img src="images/large-event.jpg" alt="large event">
+            </section>
+
             <section id="volunteer" class="one-col">
                 <h2>Volunteering</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
         
-            </section>
+    
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </main>                         
 
@@ -291,10 +306,10 @@
                     <h2>Explore</h2>
                     <ul id="footer-nav-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href=>About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="visit.html">Plan Your Visit</a></li>
                         <li><a href="animals.html">Meet the Animals</a></li>
-                        <li><a href=>Things to Do</a></li>
+                        <li><a href="to-do.html">Things to Do</a></li>
                     </ul>
                 </nav>
 
