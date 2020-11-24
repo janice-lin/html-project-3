@@ -8,15 +8,24 @@ html {
     text-align: center;
     padding-bottom: 5vw;
 }
+#to-do-horseback, 
+#to-do-event{
+    text-align: center;
+}
 .booking-form {
     padding-bottom: 10vw;
+}
+#farm-tour, 
+#tour-form {
+    background-color: $brownLight;
 }
 #volunteer {
     background-color: $brownDark;
     color: white;
     text-align: center;
 }
-#tour-form, #farm-tour {
+#farm-dining,
+#dining-form {
     background-color: $brownLight;
 }
 
@@ -26,6 +35,10 @@ html {
         max-width: 700px;
         padding: 30px;
     }
+    #to-do-horseback, 
+    #to-do-event{
+    text-align: left;
+}
     .tour-left input {
         margin-bottom: 17px;
     }
